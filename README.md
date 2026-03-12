@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ Coffee Delivery
 
-## Getting Started
+Aplicação de e-commerce de café desenvolvida como desafio do programa **Ignite** da [Rocketseat](https://rocketseat.com.br/).
 
-First, run the development server:
+## 🔗 Deploy
+
+🚀 **[Acesse o projeto ao vivo](https://coffee-delivery-lucas.vercel.app)**
+
+---
+
+## 🎯 Sobre o projeto
+
+O Coffee Delivery é uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia. O usuário pode navegar pelo catálogo de cafés, adicionar e remover itens, ajustar quantidades, preencher o endereço de entrega e escolher a forma de pagamento.
+
+---
+
+## ✨ Funcionalidades
+
+- 📋 Listagem de produtos com categorias
+- 🛒 Adicionar e remover itens do carrinho
+- ➕ ➖ Controle de quantidade por item (na listagem e no checkout)
+- 💾 Persistência do carrinho via `localStorage`
+- 📝 Formulário completo de endereço de entrega
+- 💳 Seleção de método de pagamento (crédito, débito ou dinheiro)
+- ✅ Página de confirmação do pedido com resumo
+- 📱 Layout totalmente responsivo
+
+---
+
+## 🚀 Tecnologias
+
+| Tecnologia | Versão |
+|---|---|
+| [Next.js](https://nextjs.org/) | 15 (App Router) |
+| [React](https://react.dev/) | 19 |
+| [TypeScript](https://www.typescriptlang.org/) | 5 |
+| [Tailwind CSS](https://tailwindcss.com/) | v4 |
+
+**Gerenciamento de estado:** Context API + `useReducer`
+
+---
+
+## 🖥️ Como rodar localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/coffee-delivery.git
+
+# Entre na pasta
+cd coffee-delivery
+
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estrutura do projeto
 
-## Learn More
+```
+src/
+├── app/
+│   ├── page.tsx          # Página inicial com listagem de cafés
+│   ├── checkout/         # Página de checkout
+│   └── success/          # Página de confirmação do pedido
+├── components/           # Componentes reutilizáveis
+├── contexts/             # Context API (CartContext, OrderContext)
+├── reducers/             # Reducers do carrinho e endereço
+├── types/                # Tipagens TypeScript
+└── data/                 # Dados dos cafés
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👨‍💻 Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feito com 💜 por **Lucas Dias**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
