@@ -4,7 +4,7 @@ Aplicação de e-commerce de café desenvolvida como desafio do programa **Ignit
 
 ## 🔗 Deploy
 
-🚀 **[Acesse o projeto ao vivo](https://coffee-delivery-lucas.vercel.app)**
+🚀 **[Acesse o projeto ao vivo](https://coffee-delivery-only-react-lucas.vercel.app)**
 
 ---
 
@@ -44,10 +44,10 @@ O Coffee Delivery é uma aplicação para gerenciar um carrinho de compras de um
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/coffee-delivery.git
+git clone https://github.com/lucasserdev/coffee-delivery-only-react.git
 
 # Entre na pasta
-cd coffee-delivery
+cd coffee-delivery-only-react
 
 # Instale as dependências
 npm install
@@ -81,5 +81,5 @@ src/
 
 Feito com 💜 por **Lucas Dias**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasdiasleandro/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucasserdev)
