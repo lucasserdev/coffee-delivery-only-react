@@ -1,10 +1,14 @@
 'use client'
+import { useCart } from "@/contexts/CartContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export const Header = () => {
     const route = useRouter();
+    const cartCtx = useCart();
+
+    const totalItems = cartCtx?.cart.reduce((acc, item) => acc + item.quantity, 0) ?? 0;
 
     const toggleCheckout = () => {
         route.push('/checkout')
@@ -21,7 +25,6 @@ export const Header = () => {
                     />
                 </Link>
 
-
                 <div className="flex items-center justify-center gap-3">
                     <div className="bg-purple-light w-35.5 h-9.5 flex gap-2 items-center justify-center rounded-md">
                         <Image
@@ -33,13 +36,19 @@ export const Header = () => {
                         <span className="text-sm text-purple-dark">Porto Alegre, RS</span>
                     </div>
 
-                    <Image
-                        onClick={toggleCheckout}
-                        src="/Cart.svg"
-                        alt=""
-                        width={38}
-                        height={38}
-                    />
+                    <div className="relative cursor-pointer" onClick={toggleCheckout}>
+                        <Image
+                            src="/Cart.svg"
+                            alt="Carrinho"
+                            width={38}
+                            height={38}
+                        />
+                        {totalItems > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-yellow-dark text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
+                                {totalItems}
+                            </span>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>

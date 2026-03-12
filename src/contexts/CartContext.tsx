@@ -28,13 +28,12 @@ export const CartProvider = ({children}: {children: React.ReactNode}) => {
     }, [cart])
 
     const addCoffee = (coffee: CoffeType) => {
-        dispatch({
-            type: 'add',
-            payload: {
-                coffee: coffee,
-                quantity: 1
-            }
-        })
+        const existing = cart.find(item => item.coffee.id === coffee.id);
+        if (existing) {
+            dispatch({ type: 'increment', payload: { id: coffee.id } });
+        } else {
+            dispatch({ type: 'add', payload: { coffee, quantity: 1 } });
+        }
     }
 
     const removeCoffee = (id: number) => {
