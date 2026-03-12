@@ -4,7 +4,7 @@ Aplicação de e-commerce de café desenvolvida como desafio do programa **Ignit
 
 ## 🔗 Deploy
 
-🚀 **[Acesse o projeto ao vivo](https://coffee-delivery-only-react-lucas.vercel.app)**
+🚀 **[Acesse o projeto ao vivo](https://coffee-delivery-only-react.vercel.app)**
 
 ---
 
